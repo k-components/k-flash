@@ -1,11 +1,11 @@
 {
   "author": "Ilkka Huotari <ilkkah@gmail.com>",
-  "name": "derby-flash",
+  "name": "k-flash",
   "description": "Flash messages for Derby",
   "version": "0.9.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ile/derby-flash.git"
+    "url": "git://github.com/k-components/k-flash.git"
   },
   "private": false,
   "main": "lib/index",

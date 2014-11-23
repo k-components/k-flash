@@ -2,7 +2,7 @@
 var Model, racer,
   __hasProp = {}.hasOwnProperty;
 
-racer = require('racer');
+racer = require('k-model');
 
 Model = racer.Model;
 

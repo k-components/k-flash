@@ -1,4 +1,4 @@
-racer = require('racer')
+racer = require('k-model')
 Model = racer.Model
 
 module.exports = (app, options = {}) ->
