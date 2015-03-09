@@ -43,7 +43,7 @@ module.exports = (app, options = {}) ->
 		originalRouter = app.router
 
 		middleware = (req, res, next) ->
-			if req.flash
+			if req.flash and req.session
 				model = req.getModel()
 				msgs = req.flash()
 				for type of msgs
