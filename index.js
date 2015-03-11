@@ -58,6 +58,8 @@
         if (type && msg) {
           if ((_ref = this.data) != null ? (_ref1 = _ref.$controller) != null ? (_ref2 = _ref1.req) != null ? _ref2.flash : void 0 : void 0 : void 0) {
             return this.data.$controller.req.flash(type, msg);
+          } else if (useToast && this.toast) {
+            return this.toast(type, msg);
           } else {
             return this.root.push("_flash.flashq." + type, {
               msg: msg,
