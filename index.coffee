@@ -37,8 +37,6 @@ module.exports = (app, options = {}) ->
 			if type and msg
 				if @data?.$controller?.req?.flash
 					@data.$controller.req.flash type, msg
-				else if useToast and @toast
-					@toast type, msg
 				else
 					@root.push "_flash.flashq.#{type}", { msg: msg, toast: useToast  }
 
