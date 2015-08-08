@@ -1,8 +1,8 @@
 {
   "author": "Ilkka Huotari <ilkkah@gmail.com>",
   "name": "k-flash",
-  "description": "Flash messages for Derby",
-  "version": "0.9.4",
+  "description": "Flash messages for Kantele",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/k-components/k-flash.git"

@@ -57,3 +57,5 @@ module.exports = (app, options = {}) ->
 			(originalRouter())(req, res, next)
 
 		app.router = ->	middleware
+
+	app.component(Flash) if app.component

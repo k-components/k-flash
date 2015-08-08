@@ -1,8 +1,8 @@
-#Derby-flash
+#k-flash
 
-This is similar to [connect-flash](https://github.com/jaredhanson/connect-flash) but for [Derby](http://derbyjs.com/). 
+This is similar to [connect-flash](https://github.com/jaredhanson/connect-flash) but for [kantele](https://github.com/kantele/kantele). 
 
-Derby-flash should work along connect-flash; the messages from connect-flash will be accessible from this module.
+k-flash should work along connect-flash; the messages from connect-flash will be accessible from this module.
 
 ![image](https://cloud.githubusercontent.com/assets/433707/4265716/454049a8-3c5c-11e4-9c0a-9eb06539ed0a.png)
 
@@ -14,54 +14,43 @@ https://derby-demos.herokuapp.com/derby-flash
 ##Requirements
 
 - [Node.js](http://nodejs.org)
-- [Derby](http://derbyjs.com/)
+- [kantele](https://github.com/kantele/kantele)
 
 
 ##Installation
 
-`npm install derby-flash`
-
-##Example app
-
-Try the example app in the `example` folder!
-
-```
-npm install derby-flash
-cd node_modules/derby-flash/example
-npm install
-node server.js
-```
+`npm install k-flash`
 
 ##Usage
 
 ###Initialization
 
 ```javascript
-app.component(require('derby-flash')(app))
+app.use(require('k-flash'))
 ```
 
-Derby-flash also accepts an `options` object:
+k-flash also accepts an `options` object:
 
 ```javascript
-app.component(require('derby-flash')(app, { useToast: true }))
+app.component(require('k-flash'), { useToast: true })
 ```
 
 Currently the supported options are:
 
 - **useToast: boolean**
-	use [derby-ui-toast](https://github.com/ile/derby-ui-toast) to show the messages, if available.
+	use [k-toast](https://github.com/k-components/k-toast) to show the messages, if available.
 
 ###CSS
 
 This serves as an example stylesheet, import this from `index.styl` to use it. 
 ```css
-@import '../../node_modules/derby-flash'
+@import '../../node_modules/k-flash'
 ```
 
 ###In templates
 
 ```html
-<view name="derby-flash"></view>
+<view name="k-flash"></view>
 ```
 
 ###Adding messages
