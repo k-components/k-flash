@@ -99,7 +99,5 @@ module.exports = function(app, options) {
     return Flash;
 
   })();
-  if (app.component) {
-    return app.component(Flash);
-  }
+  return app.component(Flash);
 };

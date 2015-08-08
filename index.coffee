@@ -58,4 +58,4 @@ module.exports = (app, options = {}) ->
 
 		app.router = ->	middleware
 
-	app.component(Flash) if app.component
+	app.component Flash
