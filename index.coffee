@@ -44,7 +44,7 @@ module.exports = (app, options = {}) ->
 
 		middleware = (req, res, next) ->
 			if req.flash and req.session
-				model = req.getModel()
+				model = req.model
 				msgs = req.flash()
 				for type of msgs
 					for msg in msgs[type]
