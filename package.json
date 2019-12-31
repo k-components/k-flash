@@ -2,13 +2,12 @@
   "author": "Ilkka Huotari <ilkkah@gmail.com>",
   "name": "k-flash",
   "description": "Flash messages for Kantele",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/k-components/k-flash.git"
   },
   "private": false,
-  "main": "lib/index",
   "directories": {
     "lib": "lib"
   },

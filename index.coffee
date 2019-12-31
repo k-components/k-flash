@@ -16,7 +16,7 @@ module.exports = (app, options = {}) ->
 					# instanceof will fail in multi frame environments, but should be ok here
 					if data instanceof Array
 						for obj in data
-							if typeof obj.msg is 'string' and model.toast and (options.useToast or obj.toast)
+							if typeof obj.msg is 'string' and model.toast and ((Array.isArray(options.useToast) && type in options.useToast) || options.useToast == true or obj.toast)
 								model.toast type, obj.msg
 							else
 								model.root.push "_page.flash.#{type}", obj.msg
